@@ -1,0 +1,46 @@
+.container {
+display: grid;
+grid-template-columns:  1fr 10fr;
+grid-template-rows:1fr 5fr  0.9fr;
+grid-template-areas: 
+"logo logo "
+"navigation navigation"
+"header header"
+"sidebar sidebars"
+"body body"
+"footer footer"
+;
+}
+.logo {
+       grid-area: logo;
+    background-color: rgb(75, 75, 16);
+    width: 1000px;
+    height: 1000;
+    }
+.navigation {
+
+     grid-area: navigation;
+    background-color: rgb(128, 75, 46);
+    width: 200%;
+    height: 50px;
+}
+.header {
+     grid-area: header;
+    background-color: blue;
+    height: 100px;
+}
+.sidebar {
+     grid-area: sidebar;
+    background-color: rgb(218, 41, 150);
+    width: 150px;
+    height: 200px;
+}
+.body  
+{
+     grid-area: body ;
+    background-color: rgb(221, 142, 23);
+}
+.footer {
+     grid-area: footer;
+    background-color: rgb(201, 82, 118);
+}
