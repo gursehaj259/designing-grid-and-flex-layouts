@@ -13,34 +13,41 @@ grid-template-areas:
 }
 .logo {
        grid-area: logo;
-    background-color: rgb(75, 75, 16);
+    background-color: rgb(165, 165, 117);
     width: 1000px;
     height: 1000;
     }
 .navigation {
 
      grid-area: navigation;
-    background-color: rgb(128, 75, 46);
-    width: 200%;
+    background-color: rgb(75, 75, 16);
+    width: 1000px;
     height: 50px;
 }
 .header {
      grid-area: header;
     background-color: blue;
-    height: 100px;
+    height: 85px;
+    width: 1000px;
 }
 .sidebar {
      grid-area: sidebar;
     background-color: rgb(218, 41, 150);
-    width: 150px;
+    width: 200px;
     height: 200px;
 }
-.body  
-{
-     grid-area: body ;
-    background-color: rgb(221, 142, 23);
+.body  {
+    position: fixed; /* Stays in place even when scrolling */
+    top: 223px; /* Adjust as needed */
+    grid-area: body;
+    right: 0;
+    width: 1400px;
+    height: 200px;
+    background-color: lightblue;
 }
 .footer {
      grid-area: footer;
     background-color: rgb(201, 82, 118);
+    width: 1000px;
+    height: 100px;
 }
